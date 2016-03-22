@@ -1,0 +1,43 @@
+body{
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  background: linear-gradient(to bottom, lightblue, lightgrey)
+}
+.image {
+  display:  inline-block;
+  text-align:  center;
+}
+.image img {
+  width:  40%;
+}
+.lw { 
+  font-size: 50px;
+  text-align: center;
+  font-style:  italic;
+}
+.guess label{
+  display:  block;
+  text-align: center;
+  margin:  15 auto 20 auto;
+}
+.guess input {
+  display: block;
+  margin: 15 auto 20 auto;
+}
+.guess button{
+  display: block;
+  margin:  15 auto 15 auto;
+}
+.buttons {
+  text-align: center;
+}
+.bottombuttontwo{
+  width: 140px;
+  margin: 5px;
+}
+.bottombuttonone{
+  width: 140px;
+  margin:  5px;
+}
+.remainingguesses{
+  text-align: center;
+}
