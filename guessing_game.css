@@ -1,6 +1,9 @@
+html{
+  height: 100%;
+  background: linear-gradient(to bottom, lightblue, lightgrey)
+}
 body{
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-  background: linear-gradient(to bottom, lightblue, lightgrey)
 }
 .image {
   display:  inline-block;
@@ -21,15 +24,14 @@ body{
 }
 .whoopione, .whoopitwo{
   text-align: center;
-  margin: 5px;
+  margin: 15px;
 }
-
 .buttons {
   text-align: center;
 }
 .bottombuttonone, .bottombuttontwo{
   width: 140px;
-  margin:  5px;
+  margin:  10px;
 }
 .remainingguesses{
   text-align: center;
