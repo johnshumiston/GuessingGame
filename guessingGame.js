@@ -3,8 +3,8 @@
 $(document).ready(function() {
 
 
-var playersGuess,
-    winningNumber
+var playersGuess = playersGuessSubmission();
+var winningNumber = generateWinningNumber();
 
 
 
@@ -14,17 +14,20 @@ var playersGuess,
 
 function generateWinningNumber(){
 	winningNumber = Math.floor(Math.random()*100)+1;
+	return winningNumber;
 }
 
 // Fetch the Players Guess
 
-function playersGuessSubmission(event){
-	playersGuess = +document.getElementById('guess').value;
-	document.getElementById('guess') = "";
+function playersGuessSubmission(){
+	playersGuess = +$(this).val();
+	$('#guess').append('playersGuess');
+	$('playersGuess').remove();
+	return playersGuess;
 };
-
-$('.whoopitwo').on('click', 'button', playersGuessSubmission())
 // Determine if the next guess should be a lower or higher number
+$('#guess').on('click', '#theguess', playersGuessSubmission());
+
 
 function lowerOrHigher(){
 	// add code here
