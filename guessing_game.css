@@ -9,7 +9,7 @@ body{
 .image img {
   width:  40%;
 }
-.lw { 
+.esp { 
   font-size: 50px;
   text-align: center;
   font-style:  italic;
@@ -23,6 +23,10 @@ body{
   display: block;
   margin: 15 auto 20 auto;
 }
+.input {
+  display: block;
+  margin:  15 auto 15 auto;
+}
 .guess button{
   display: block;
   margin:  15 auto 15 auto;
@@ -30,11 +34,7 @@ body{
 .buttons {
   text-align: center;
 }
-.bottombuttontwo{
-  width: 140px;
-  margin: 5px;
-}
-.bottombuttonone{
+.bottombuttonone, .bottombuttontwo{
   width: 140px;
   margin:  5px;
 }
