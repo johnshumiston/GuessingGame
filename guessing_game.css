@@ -19,18 +19,11 @@ body{
   text-align: center;
   margin:  15 auto 20 auto;
 }
-.guess input {
-  display: block;
-  margin: 15 auto 20 auto;
+.whoopione, .whoopitwo{
+  text-align: center;
+  margin: 5px;
 }
-.input {
-  display: block;
-  margin:  15 auto 15 auto;
-}
-.guess button{
-  display: block;
-  margin:  15 auto 15 auto;
-}
+
 .buttons {
   text-align: center;
 }
