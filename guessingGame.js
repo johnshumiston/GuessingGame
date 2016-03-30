@@ -22,6 +22,7 @@ function generateWinningNumber(){
 function playersGuessSubmission(){
 	playersGuess = +$(this).val();
 	$('#guess').append('playersGuess');
+	$(this).val(""); // this should reset the val input field
 	$('playersGuess').remove();
 };
 // Determine if the next guess should be a lower or higher number
