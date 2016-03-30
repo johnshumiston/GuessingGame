@@ -3,8 +3,8 @@
 $(document).ready(function() {
 
 
-var playersGuess = playersGuessSubmission();
-var winningNumber = generateWinningNumber();
+var playersGuess
+var winningNumber
 
 
 
@@ -23,10 +23,9 @@ function playersGuessSubmission(){
 	playersGuess = +$(this).val();
 	$('#guess').append('playersGuess');
 	$('playersGuess').remove();
-	return playersGuess;
 };
 // Determine if the next guess should be a lower or higher number
-$('#guess').on('click', '#theguess', playersGuessSubmission());
+$('#guess').on('click', '#theguess', playersGuessSubmission);
 
 
 function lowerOrHigher(){
