@@ -52,11 +52,10 @@ function lowerOrHigher(playersGuess, winningNumber){
 // Check if the Player's Guess is the winning number 
 
 function checkGuess(playersGuess, winningNumber){
-		for(i=0; i<totalGuesses.length; i++) {
-			if(totalGuesses[i]===playersGuess){
-				$('#status').text("This is a duplicate").css('text-align','center');
+		if(totalGuesses.indexOf(playersGuess)!== -1){
+				$('#status').text("This is a duplicate. I'll tell you again... ").css('text-align','center');
+				return;
 			}
-		};
 		if(playersGuess===winningNumber){
 			$('#status').text("You win!!!").css('text-align','center');
 		}
