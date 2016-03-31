@@ -44,7 +44,7 @@ function lowerOrHigher(playersGuess, winningNumber){
 	else if(playersGuess>winningNumber){
 		$('#status').append("Er... aim lower..." + "You're like " + (Math.round(Math.abs(winningNumber-playersGuess) / 10) * 10) + "ish off.").css('text-align','center');
 	}
-	if(totalGuesses.length===5){
+	if(totalGuesses.length>=5){
 		$('#status').text("You're done.");
 	}
 };
