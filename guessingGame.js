@@ -89,12 +89,15 @@ function provideHint(){
 // Allow the "Player" to Play Again
 
 function playAgain(){
-	// add code here
+	totalGuesses.length=0;
+	var winningNumber=generateWinningNumber();
+	$('#status').text("Let's go!").css('text-align','center');
+	$('#remainingguesses').text((5-totalGuesses.length) + " guesses remain...!");
 }
 
 $('#submit').on('click', playersGuessSubmission);
 $('#hint').on('click', provideHint);
-
+$('#tryagain').on('click', playAgain);
 
 });
 /* **** Event Listeners/Handlers ****  */
