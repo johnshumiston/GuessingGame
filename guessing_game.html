@@ -8,25 +8,34 @@
     <script type="text/javascript" src="guessingGame.js"></script>
   </head>
   <body>
+   
     <div class="image">
       <img src="https://i.ytimg.com/vi/PsI5bREF20Y/maxresdefault.jpg" alt="Ghost"/>
     </div>
+    
     <h1 class="esp">Got ESP?</h1>
+    
       <div class="guess">
-        <label for="theguess">Whoopi's thinkin' of a number between 1 and 100...</label>
+        <label for="submit">Whoopi's thinkin' of a number between 1 and 100...</label>
         <div class="whoopione">
-        <input type = "text" id="guess" placeholder="Input number 1-100">
-        </div>
+        <input type = "text" id="input" placeholder="Input number 1-100">
+      </div>
+     
+      <div>
+        <h2 class= "middle" id="status">Let's go!</h2>
         <div class="whoopitwo">
-        <button type = "button" id="theguess">Submit your Guess</button>
+        <button type = "button" id="submit">Submit your Guess</button>
         </div>
       </div>
+    
     <div class="buttons">
-      <button type="button" class="bottombuttonone">Try Again</button>
-      <button type="button" class="bottombuttontwo">In danger? Take a hint!</button>
+      <button type="button" class="bottombuttonone" id="tryagain">Try Again</button>
+      <button type="button" class="bottombuttontwo" id="hint">In danger? Take a hint!</button>
     </div>
+    
     <div>
-      <h2 class="remainingguesses">5 guesses remain...!</h2>
+      <h2 class="remainingguesses" id="remainingguesses">5 guesses remain...!</h2>
     </div>
+  
   </body>
  </html>
