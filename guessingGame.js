@@ -27,7 +27,7 @@ function playersGuessSubmission(){
 		$('#remainingguesses').text((5-totalGuesses.length) + " guess remains...!");
 	}
 	if(totalGuesses.length===5){
-		$('#remainingguesses').text((5-totalGuesses.length) + " guesses remain... so...you lost...");
+		$('#remainingguesses').text((5-totalGuesses.length) + " guesses remain... so... you lost...");
 	}
 	lowerOrHigher(playersGuess, winningNumber);
 };
