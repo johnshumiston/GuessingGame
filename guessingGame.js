@@ -13,6 +13,7 @@ var winningNumber=generateWinningNumber();
 // Fetch the Players Guess
 
 function playersGuessSubmission(){
+
 	playersGuess = +$('#input').val();
 	$('#input').append('playersGuess');
 	$('#input').val("");
@@ -24,6 +25,9 @@ function playersGuessSubmission(){
 	}
 	if(totalGuesses.length===4){
 		$('#remainingguesses').text((5-totalGuesses.length) + " guess remains...!");
+	}
+	if(totalGuesses.length===5){
+		$('#remainingguesses').text((5-totalGuesses.length) + " guesses remain... so...you lost...");
 	}
 	lowerOrHigher(playersGuess, winningNumber);
 };
@@ -39,6 +43,9 @@ function lowerOrHigher(playersGuess, winningNumber){
 	}
 	else if(playersGuess>winningNumber){
 		$('#status').append("Er... aim lower..." + "You're like " + (Math.round(Math.abs(winningNumber-playersGuess) / 10) * 10) + "ish off.").css('text-align','center');
+	}
+	if(totalGuesses.length===5){
+		$('#status').text("You're done.");
 	}
 };
 
@@ -87,6 +94,7 @@ function playAgain(){
 
 $('#submit').on('click', playersGuessSubmission);
 $('#hint').on('click', provideHint);
+
 
 });
 /* **** Event Listeners/Handlers ****  */
