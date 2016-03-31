@@ -97,6 +97,13 @@ function playAgain(){
 $('#submit').on('click', playersGuessSubmission);
 $('#hint').on('click', provideHint);
 $('#tryagain').on('click', playAgain);
+$('#input').on('keyPress', function (e) {            
+    if (e.keyCode == 13) {
+        e.preventDefault(); 
+        playersGuessSubmission();
+        console.log('in keypress handler');
+    }
+});
 
 });
 /* **** Event Listeners/Handlers ****  */
